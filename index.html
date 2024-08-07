@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" sizes="192x192" href="img/hero.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/hero.png" />
+    <link rel="shortcut icon" type="image/ico" href="img/hero.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/hero.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/hero.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media_style.css" />
+    <script src="js/jquery.min.js"></script>
+    <title>TSUJI</title>
+  </head>
+  <body class="body relative">
+    <nav class="header__nav_mob d-md-none">
+      <img
+        class="decor decor_hero_top d-sm-none"
+        src="img/decor_hero_top_mob.png"
+        alt=""
+      />
+      <ul class="header__nav__list relative">
+        <li class="header__nav_item_mob">
+          <a href="#who" onclick="menuClose()"> About </a>
+        </li>
+        <li class="header__nav_item_mob">
+          <a href="#tokenomics" onclick="menuClose()"> Tokenomics </a>
+        </li>
+        <li class="header__nav_item_mob">
+          <a href="#roadmap" onclick="menuClose()"> Roadmap </a>
+        </li>
+      </ul>
+      <a
+        class="button"
+        href="https://raydium.io/swap/?inputMint=sol&outputMint=Kc4mmnnEdBbu4ydoDicsXK3qGgdYkwyjR2DXWrSpump"
+        target="_blank"
+        onclick="menuClose()"
+      >
+        BUY NOW
+      </a>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div class="row jc-c">
+          <div class="col-12">
+            <nav class="header__nav d-sm-block d-none">
+              <ul class="flex fw-w jc-c ai-c">
+                <li class="header__nav_item">
+                  <a href="#who"> About </a>
+                </li>
+                <li class="header__nav_item">
+                  <a href="#tokenomics"> Tokenomics </a>
+                </li>
+                <li class="header__nav_item">
+                  <a href="#roadmap"> Roadmap </a>
+                </li>
+                <li class="header__nav_item">
+                  <ul class="flex ai-c">
+                    <li class="social_link">
+                      <a href="https://x.com/sujisolana" target="_blank">
+                        <img src="img/twitter.svg" alt="Twitter" />
+                      </a>
+                    </li>
+                    <li class="social_link">
+                      <a href="https://t.me/tsujictosolana" target="_blank">
+                        <img src="img/tg.svg" alt="Telegram" />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav_item">
+                  <a
+                    class="button"
+                    href="https://raydium.io/swap/?inputMint=sol&outputMint=Kc4mmnnEdBbu4ydoDicsXK3qGgdYkwyjR2DXWrSpump"
+                    target="_blank"
+                  >
+                    BUY NOW
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__nav relative d-sm-none">
+              <ul class="flex jc-sb ai-c">
+                <li class="header__nav_item">
+                  <button class="btn_open" onclick="menuOpen()">
+                    <svg
+                      width="30"
+                      height="22"
+                      viewBox="0 0 30 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 2H28"
+                        stroke="#A06A00"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M2 11H28"
+                        stroke="#A06A00"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M2 20H28"
+                        stroke="#A06A00"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn_close" onclick="menuClose()">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.80762 2.80762L21.1924 21.1924"
+                        stroke="#A06A00"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M21.1924 2.80762L2.80761 21.1924"
+                        stroke="#A06A00"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                </li>
+                <li class="header__nav_item">
+                  <ul class="flex ai-c">
+                    <li class="social_link">
+                      <a href="https://x.com/sujisolana" target="_blank">
+                        <img src="img/twitter.svg" alt="Twitter" />
+                      </a>
+                    </li>
+                    <li class="social_link">
+                      <a href="https://t.me/tsujictosolana" target="_blank">
+                        <img src="img/tg.svg" alt="Telegram" />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section hero">
+        <!-- <img
+          class="decor decor_hero_top d-sm-block d-none"
+          src="img/decor_hero_top.png"
+          alt=""
+        />
+        <img
+          class="decor decor_hero_top d-sm-none"
+          src="img/decor_hero_top_mob.png"
+          alt=""
+        /> -->
+        <img
+          class="decor decor_hero_bottom d-sm-block d-none"
+          src="img/decor_hero_bottom.png"
+          alt=""
+        />
+        <img
+          class="decor decor_hero_bottom d-sm-none"
+          src="img/decor_hero_bottom_mob.png"
+          alt=""
+        />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 flex fd-c">
+              <h1>TSUJI</h1>
+              <p class="hero__descr">
+                The most loveable CAT in the crypto realm. 
+              </p>
+              <div class="">
+                <a
+                  class="button"
+                  href="https://raydium.io/swap/?inputMint=sol&outputMint=Kc4mmnnEdBbu4ydoDicsXK3qGgdYkwyjR2DXWrSpump"
+                  target="_blank"
+                >
+                  BUY NOW
+                </a>
+                <div class="link inline-block">
+                  <div class="flex jc-c ai-c">
+                    <button id="copy">
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18.4509 21.0689C19.5322 20.924 20.5603 19.897 20.7052 18.8146C21.3572 13.7212 21.3572 8.56391 20.7063 3.46936C20.5614 2.38805 19.5344 1.35998 18.452 1.21511C13.3575 0.564188 8.20018 0.564188 3.10673 1.21617C2.02542 1.35999 0.997347 2.38805 0.852474 3.47043H0.851409C0.200491 8.56388 0.200491 13.7212 0.851409 18.8146C0.996295 19.8959 2.02329 20.924 3.10566 21.0689C8.20021 21.7208 13.3575 21.7208 18.4509 21.0699V21.0689Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M9.54911 27.5121H9.54804C14.6426 28.163 19.7999 28.163 24.8933 27.5121C25.9746 27.3683 27.0038 26.3402 27.1476 25.2578H27.1486C27.7996 20.1633 27.7996 15.006 27.1486 9.91255C27.0048 8.83124 25.9768 7.80316 24.8944 7.65829C24.2978 7.58265 23.7033 7.51553 23.1089 7.45801C23.3368 11.3316 23.2047 15.219 22.7147 19.0702V19.083C22.5868 20.0418 22.1074 20.9825 21.3638 21.725C20.6213 22.4686 19.6827 22.948 18.7218 23.0759H18.709L18.7101 23.0748C16.0808 23.4093 13.4334 23.5787 10.783 23.5798C9.55785 23.5798 8.32951 23.5425 7.0979 23.4701C7.15649 24.0645 7.22255 24.66 7.29819 25.2556C7.43881 26.338 8.46674 27.3672 9.54911 27.5121Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <input
+                      id="contract"
+                      class="hero__input"
+                      type="text"
+                      value="Kc4mmnnEdBbu4ydoDicsXK3qGgdYkwyjR2DXWrSpump"
+                    />
+                    <p>Kc4mmnnEdBbu4ydoDicsXK3qGgdYkwyjR2DXWrSpump</p>
+                  </div>
+                </div>
+              </div>
+              <script>
+                // Кнопка скопировавть
+                function copy() {
+                  let copyText = document.querySelector("#contract");
+                  copyText.select();
+                  document.execCommand("copy");
+                }
+
+                document.querySelector("#copy").addEventListener("click", copy);
+              </script>
+            </div>
+          </div>
+        </div>
+        <!-- <img class="decor decor_hero_video" src="img/hero.png" alt=""> -->
+        <div class="decor decor_hero_video">
+          <img class="hero__video" src="img/hero.png" alt="" />
+        </div>
+      </section>
+
+      <section id="who" class="section who">
+        <div class="container">
+          <div class="row fd-cr_mob ai-c_mob">
+            <div class="col-xxl-5 col-md-6 col-12">
+              <div class="Img_box">
+                <img
+                  src="/img/tsuji.jpg"
+                  style="width: 100%; max-width: 500px; border-radius: 9px;"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-xxl-7 col-md-6 col-12 flex jc-fe">
+              <div class="who__descr">
+                <h2 style="padding-bottom: 30px">About us</h2>
+                <!-- <img
+                  src="/img/abt2.jpg"
+                  style="width: 100%; max-width: 500px; padding-bottom: 30px"
+                  alt=""
+                /> -->
+
+                <p class="" style="line-height: 35px">
+                  Tsuji, a fluffy and affectionate cat, loves to explore her home in the corner of a peaceful neighbourhood in Japan. She spends hours chasing leaves and butterflies in the garden. When Tsuji is not outside trying to catch something interesting or playing with her companion Kabuso, a playful shiba inu, nothing pleases her more than a plate of fresh fish and some snuggles with people she loves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tokenomics" class="section tokenomics">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="ta-c">Tokenomics</h2>
+            </div>
+          </div>
+          <div class="row ai-c tokenomics__statistic">
+            <div
+              class="col-md-6 col-12 flex fd-c ai-c tokenomics__table__container"
+            >
+              <h3>Supply: 1 BILLION</h3>
+              <br />
+              <!-- <h3>TAX : 0/0</h3> -->
+              <div class="flex ai-c pt-4" style="gap: 20px">
+                <p class="button" style="background-color: #349471">Tax : 0</p>
+                <p class="button" style="background-color: #349471">
+                  LP : BURNED
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 tokenomics__elipse__container">
+              <img
+                class="tokenomics__elipse"
+                src="img/hero.png"
+                style="width: 200px; height: 200px; border-radius: 50%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section roadmap">
+        <div class="container">
+          <div class="row">
+            <img
+              class="roadmap__arrow d-sm-block d-none"
+              src="img/roadmap_arrow.png"
+              alt=""
+            />
+            <img
+              class="roadmap__arrow d-sm-none"
+              src="img/roadmap_arrow_mob.png"
+              alt=""
+            />
+            <div
+              class="col-12 roadmap__title_container flex justify-content-md-space-between jc-c ai-c"
+            >
+              <img
+                class="d-md-block d-none"
+                src="img/hero.png"
+                style="width: 100px; border-radius: 50%"
+                alt=""
+              />
+              <h2>Roadmap</h2>
+              <img
+                class="d-md-block d-none"
+                src="img/hero.png"
+                style="width: 100px; border-radius: 50%"
+                alt=""
+              />
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="roadmap__card roadmap__card_1">
+                <h3>Phase&nbsp;1</h3>
+                <ul class="roadmap__list">
+                  <!-- <li class="roadmap__item">Community Takeover.</li> -->
+                  <li class="roadmap__item">
+                    Introduction of&nbsp; TSUJI Coin.
+                  </li>
+                  <li class="roadmap__item">Launch Events and Engagement.</li>
+                  <li class="roadmap__item">Social Media Activation.</li>
+                  <li class="roadmap__item">Contract Renouncement.</li>
+                  <li class="roadmap__item">Liquidity Added & BURN.</li>
+                  <li class="roadmap__item">Marketing.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="roadmap__card roadmap__card_2">
+                <h3>Phase&nbsp;2</h3>
+                <ul class="roadmap__list">
+                  <li class="roadmap__item">Listing on&nbsp;CG/CMC.</li>
+                  <li class="roadmap__item">Complete DApp Development.</li>
+                  <li class="roadmap__item">Rewards Program.</li>
+                  <li class="roadmap__item">
+                    T1&nbsp;&amp; T2&nbsp;Strategic Partnerships.
+                  </li>
+                  <li class="roadmap__item">YouTube, FB, Reddit campaigns.</li>
+                  <li class="roadmap__item">Top 10&nbsp;CEX Listing.</li>
+                  <li class="roadmap__item">Dex's Upgrades.</li>
+                  <li class="roadmap__item">A-ads Marketing Campaigns.</li>
+                  <li class="roadmap__item">Trending on&nbsp;Aggregators.</li>
+                  <li class="roadmap__item">Reach 10,000&nbsp;Holders.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="roadmap__card roadmap__card_3">
+                <h3>Phase&nbsp;3</h3>
+                <ul class="roadmap__list">
+                  <li class="roadmap__item">Continue Ad&nbsp;Campaign.</li>
+                  <li class="roadmap__item">100M&nbsp;MARKET CAP.</li>
+                  <li class="roadmap__item">Host Art Competitions.</li>
+                  <li class="roadmap__item">Achieve 50,000&nbsp;Holders.</li>
+                  <li class="roadmap__item">
+                    Organize Buy &amp;&nbsp;Shill Competitions.
+                  </li>
+                  <li class="roadmap__item">Trending with $TSUJI.</li>
+                  <li class="roadmap__item">Support MEME Culture.</li>
+                  <li class="roadmap__item">Unstoppable Momentum.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section partners">
+        <div class="container partners__container">
+          <div class="row">
+            <div class="col-md-3 col-6 flex jc-c ai-c">
+              <a href="https://raydium.io/swap/" target="_blank">
+                <img src="img/partners/partners_1.png" alt="" />
+              </a>
+            </div>
+            <div class="col-md-3 col-6 flex jc-c ai-c">
+              <a href="https://coinmarketcap.com" target="_blank">
+                <img src="img/partners/partners_2.png" alt="" />
+              </a>
+            </div>
+            <div class="col-md-3 col-6 flex jc-c ai-c">
+              <a href="https://www.coingecko.com" target="_blank">
+                <img src="img/partners/partners_3.png" alt="" />
+              </a>
+            </div>
+            <div class="col-md-3 col-6 flex jc-c ai-c">
+              <a
+                href="https://www.dextools.io/app/en/solana/pair-explorer/DRhybi6yt2Lgprk5cg94gh2vAV4Rroew1NnZU6FtdJA9?t=1723002711337"
+                target="_blank"
+              >
+                <img src="img/partners/partners_4.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="flex jc-sb ai-c">
+              <a class="footer__link" href="index.html">
+                <img
+                  src="img/hero.png"
+                  style="width: 120px; border-radius: 50%"
+                  alt=""
+                />
+              </a>
+              <ul class="flex fw-w jc-c ai-c fd-c_mob">
+                <li class="header__nav_item">
+                  <a href="#who"> About </a>
+                </li>
+                <li class="header__nav_item">
+                  <a href="#tokenomics"> Tokenomics </a>
+                </li>
+                <li class="header__nav_item">
+                  <a href="#roadmap"> Roadmap </a>
+                </li>
+                <li class="header__nav_item d-sm-block d-none">
+                  <ul class="flex ai-c">
+                    <li class="social_link">
+                      <a href="https://x.com/sujisolana" target="_blank">
+                        <img src="img/footer_twitter.svg" alt="Twitter" />
+                      </a>
+                    </li>
+                    <li class="social_link">
+                      <a href="https://t.me/tsujictosolana" target="_blank">
+                        <img src="img/footer_tg.svg" alt="Telegram" />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav_item">
+                  <a
+                    class="button"
+                    href="https://raydium.io/swap/?inputMint=sol&outputMint=Kc4mmnnEdBbu4ydoDicsXK3qGgdYkwyjR2DXWrSpump"
+                    target="_blank"
+                  >
+                    BUY NOW
+                  </a>
+                </li>
+                <li class="header__nav_item d-sm-none">
+                  <ul class="flex ai-c">
+                    <li class="social_link">
+                      <a href="https://x.com/sujisolana" target="_blank">
+                        <img src="img/footer_twitter.svg" alt="Twitter" />
+                      </a>
+                    </li>
+                    <li class="social_link">
+                      <a href="https://t.me/tsujictosolana" target="_blank">
+                        <img src="img/footer_tg.svg" alt="Telegram" />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function menuOpen() {
+        $(".body").addClass("hidden");
+        $(".header__nav_mob").addClass("active");
+        $(".btn_open").addClass("active");
+        $(".btn_close").addClass("active");
+      }
+
+      function menuClose() {
+        $(".body").removeClass("hidden");
+        $(".header__nav_mob").removeClass("active");
+        $(".btn_open").removeClass("active");
+        $(".btn_close").removeClass("active");
+      }
+    </script>
+  </body>
+</html>

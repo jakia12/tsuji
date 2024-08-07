@@ -1,0 +1,23 @@
+:root {
+  /* width */
+  --w-container: 1250px;
+
+  /* border radius */
+  --br-btn: 8px;
+
+  /* font-size */
+  --fs-title-1: 8vw;
+  --fs-title-2: 6.1vw;
+  --fs-title-3: 1.8vw;
+  --fs-text: 1.3vw;
+  --fs-text-small: 1.1vw;
+  --fs-text-extra-small: .8vw;
+  --fs-roadmap: 1vw;
+
+  /* color */
+  --c-body: #349471;
+  --c-body-reverse: #FFFFFF;
+  --c-text: #FFFFFF;
+  --c-btn: #A06A00;
+  --c-footer: #63330E;
+}

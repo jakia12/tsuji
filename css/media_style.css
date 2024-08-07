@@ -1,0 +1,284 @@
+@media (min-width: 1921px) {
+  :root {
+    --fs-title-1: 140px;
+    --fs-title-2: 108px;
+    --fs-title-3: 32px;
+    --fs-text: 24px;
+    --fs-text-small: 20px;
+    --fs-text-extra-small: 14px;
+    --fs-roadmap: 18px;
+  }
+}
+
+@media (max-width: 1630px) and (min-width: 1200px) {
+  :root {
+    --w-container: 80vw;
+  }
+}
+
+/* mob */
+
+@media (max-width: 768px) {
+  :root {
+    --fs-title-1: 60px;
+    --fs-title-2: 40px;
+    --fs-title-3: 20px;
+    --fs-text: 14px;
+    --fs-text-small: 20px;
+    --fs-text-extra-small: 8px;
+    --fs-roadmap: 14px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .link {
+    padding: 6px;
+    width: 100%;
+  }
+
+  /* header */
+
+  .header {
+    top: 24px;
+  }
+
+  .header__nav {
+    padding: 13px 16px;
+  }
+
+  .header__nav_mob {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 150px 12px;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #fec76d;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 400;
+  }
+
+  .header__nav_mob .decor_hero_top {
+    z-index: 500;
+  }
+
+  .header__nav_mob.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .btn_open,
+  .btn_close {
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .btn_close,
+  .btn_open.active {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .btn_close {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(16px + 15px - 12px);
+  }
+
+  .btn_close.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .hidden {
+    overflow: hidden;
+  }
+
+  .header__nav_item_mob:not(:last-child) {
+    margin-bottom: 37px;
+  }
+
+  .header__nav_mob::before {
+    /* content: url('../img/bomb.png');
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    z-index: 0; */
+  }
+
+  .header__nav_mob .button {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* hero */
+
+  .hero {
+    height: auto;
+    padding-top: 114px;
+    padding-bottom: 430px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    position: relative;
+    z-index: 100;
+  }
+
+  .hero__descr {
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-size: var(--fs-text);
+  }
+
+  .hero .button {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 22px;
+    font-size: 20px;
+  }
+
+  #copy svg {
+    width: 18px;
+  }
+
+  #copy {
+    margin-right: 5px;
+  }
+
+  .decor_hero_bottom {
+    top: auto;
+    bottom: 0;
+  }
+
+  .decor_hero_video {
+    width: 100%;
+    bottom: 55px;
+  }
+
+  /* who */
+
+  .who {
+    padding-top: 48px;
+    padding-bottom: 40vw;
+    /* background-image: url("../img/about_bg_mob.png"); */
+  }
+
+  .who__descr {
+    max-width: 100%;
+  }
+
+  /* tokenomics */
+
+  .tokenomics {
+    padding-top: 55px;
+    padding-bottom: 37vw;
+    background-image: url("../img/tokenomics_bg_mob.png");
+  }
+
+  .tokenomics h2 {
+    margin-bottom: 24px;
+  }
+
+  .tokenomics__statistic {
+    flex-direction: column-reverse;
+  }
+
+  .tokenomics__table__container,
+  .tokenomics__elipse__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tokenomics__table,
+  .tokenomics__elipse {
+    width: 100%;
+    max-width: 495px;
+  }
+
+  .tokenomics__elipse__container {
+    padding-left: 12px;
+    margin-bottom: 25px;
+  }
+
+  /* roadmap */
+
+  .roadmap {
+    padding-top: 50px;
+    padding-bottom: 48vw;
+    background-image: url("../img/roadmap_bg_mob.png");
+  }
+
+  .roadmap__arrow {
+    top: 75px;
+    left: 0;
+    width: 157px;
+    padding: 0;
+  }
+
+  .roadmap__card {
+    padding: 44px 16px 16px 20px;
+    padding-right: 10px;
+    border-radius: 30px;
+    margin-left: 48px;
+    margin-bottom: 65px;
+  }
+
+  .roadmap__card_1 {
+    height: 375px;
+  }
+
+  .roadmap__card_2 {
+    height: 415px;
+  }
+
+  .roadmap__card_3 {
+    height: 375px;
+    margin-bottom: 0;
+  }
+
+  .roadmap__list {
+    padding-left: 20px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .footer nav {
+    flex-direction: column;
+  }
+
+  .footer__link {
+    width: 212px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .footer .header__nav_item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 22px;
+  }
+
+  .footer .button {
+    font-size: 24px;
+  }
+}
